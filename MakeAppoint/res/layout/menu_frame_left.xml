@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/leftbackground3"
+    android:layout_height="match_parent"
+   android:orientation="vertical">
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/left_top1"
+        
+        >
+        <RelativeLayout 
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mRlLeft"
+            android:layout_centerVertical="true"
+            >
+        <ImageView 
+            android:src="@drawable/left_image1"
+            android:layout_width="wrap_content"
+            android:id="@+id/mIv11"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            />
+                        <TextView 
+            android:layout_centerInParent="true"
+            android:text="@string/left1"
+                        android:layout_marginLeft="10dp"
+            
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/mIv11"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        
+        </RelativeLayout>
+        
+</RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/leftbackground2"
+        
+        >
+       
+</RelativeLayout>
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:textColor="@color/white"
+                android:layout_marginTop="18dp"
+                android:text="@string/left2"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+             android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"
+             
+                android:text="@string/left3"
+                />            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+             android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"
+             
+                android:text="@string/left4"
+                />
+                                        <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                               android:textColor="@color/white"
+                android:singleLine="true"
+             android:layout_marginLeft="15dp"
+                android:text="@string/left7"
+                />
+                
+                        <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                               android:textColor="@color/white"
+                
+             android:layout_marginLeft="15dp"
+                android:text="@string/left5"
+                />
+                                    <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                               android:textColor="@color/white"
+                
+             android:layout_marginLeft="15dp"
+                android:text="@string/left6"
+                />
+        </LinearLayout>
+        
+        
+    </ScrollView>
+    
+    
+    
+    
+    
+    
+    
+</LinearLayout>

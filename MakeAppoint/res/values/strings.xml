@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MakeAppoint</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_1">登入</string>
+        <string name="login_2">忘记密码</string>
+        <string name="login_3">直接预约</string>
+                <string name="second1">预约诊所</string>
+                <string name="second2">地区</string>
+                                <string name="second3">注册专科</string>
+                                <string name="second4">预约日期</string>
+                                                <string name="second5">下一步</string>
+          <string name="left1">马上预约</string>
+         <string name="left2">诊所资料</string>
+          <string name="left3">我的资料</string>
+         <string name="left4">更改设置</string>
+          <string name="left5">预约通简介</string>
+                   <string name="left6">提供建议</string>
+                   <string name="left7">—— —— —— —— —— —— ——</string>
+                   
+</resources>
