@@ -632,43 +632,55 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int left_top1=0x7f020008;
         public static final int leftbackground2=0x7f020009;
         public static final int leftbackground3=0x7f02000a;
-        public static final int login_b1=0x7f02000b;
-        public static final int login_b2=0x7f02000c;
-        public static final int login_b3=0x7f02000d;
-        public static final int login_background=0x7f02000e;
-        public static final int login_bt1=0x7f02000f;
-        public static final int login_top_1=0x7f020010;
-        public static final int text_center=0x7f020011;
-        public static final int title_bar1=0x7f020012;
-        public static final int title_top=0x7f020013;
-        public static final int title_top_left=0x7f020014;
+        public static final int list_c=0x7f02000b;
+        public static final int login_b1=0x7f02000c;
+        public static final int login_b2=0x7f02000d;
+        public static final int login_b3=0x7f02000e;
+        public static final int login_background=0x7f02000f;
+        public static final int login_bt1=0x7f020010;
+        public static final int login_top_1=0x7f020011;
+        public static final int text_center=0x7f020012;
+        public static final int title_bar1=0x7f020013;
+        public static final int title_right=0x7f020014;
+        public static final int title_top=0x7f020015;
+        public static final int title_top_left=0x7f020016;
+        public static final int top_left=0x7f020017;
     }
     public static final class id {
         public static final int fullscreen=0x7f060003;
         public static final int left=0x7f060001;
-        public static final int mEtAddress=0x7f060005;
-        public static final int mEtPassword=0x7f060006;
-        public static final int mIv11=0x7f06000b;
-        public static final int mLogin1=0x7f060007;
-        public static final int mLogin2=0x7f060008;
-        public static final int mLogin3=0x7f060009;
-        public static final int mRlLeft=0x7f06000a;
-        public static final int mRlre1=0x7f06000d;
+        public static final int mEtAddress=0x7f060009;
+        public static final int mEtPassword=0x7f06000a;
+        public static final int mIVright=0x7f060007;
+        public static final int mIv11=0x7f06000f;
+        public static final int mLogin1=0x7f06000b;
+        public static final int mLogin2=0x7f06000c;
+        public static final int mLogin3=0x7f06000d;
+        public static final int mLvchoseva=0x7f060006;
+        public static final int mRlLeft=0x7f06000e;
+        public static final int mRlre1=0x7f060005;
+        public static final int mTvItext1=0x7f060008;
         public static final int margin=0x7f060004;
-        public static final int menu_frame=0x7f06000c;
+        public static final int menu_frame=0x7f060010;
         public static final int right=0x7f060002;
         public static final int selected_view=0x7f060000;
-        public static final int slidingmenumain=0x7f06000e;
+        public static final int slidingmenumain=0x7f060011;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int login=0x7f030001;
-        public static final int menu_frame_left=0x7f030002;
-        public static final int menu_frame_left1=0x7f030003;
-        public static final int reservation=0x7f030004;
-        public static final int slidingmenumain=0x7f030005;
+        public static final int chosereserva=0x7f030001;
+        public static final int itemchoseva=0x7f030002;
+        public static final int login=0x7f030003;
+        public static final int menu_frame_left=0x7f030004;
+        public static final int menu_frame_left1=0x7f030005;
+        public static final int reservation=0x7f030006;
+        public static final int slidingmenumain=0x7f030007;
     }
     public static final class string {
+        public static final int Itext1=0x7f070013;
+        public static final int Itext2=0x7f070014;
+        public static final int Itext3=0x7f070015;
+        public static final int Itext4=0x7f070016;
         public static final int action_settings=0x7f070002;
         public static final int app_name=0x7f070000;
         public static final int hello_world=0x7f070001;
@@ -687,6 +699,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int second3=0x7f070008;
         public static final int second4=0x7f070009;
         public static final int second5=0x7f07000a;
+        public static final int third1=0x7f070012;
     }
     public static final class styleable {
         /** Attributes that can be used with a SlidingMenu.

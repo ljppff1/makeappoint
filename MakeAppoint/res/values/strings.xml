@@ -19,5 +19,11 @@
           <string name="left5">预约通简介</string>
                    <string name="left6">提供建议</string>
                    <string name="left7">—— —— —— —— —— —— ——</string>
-                   
+                      <string name="third1">选择诊所</string>
+      <string name="Itext1">预约通连锁医务中心</string>
+      <string name="Itext2">地址：将军澳XXXXXXXXXXXXX</string>
+      <string name="Itext3">陈大文医生（应诊时间：10:00-20:00) 当日预约人数5人</string>
+            <string name="Itext4">陈大文医生（应诊时间：14:00-20:00) 当日预约人数3人</string>
+      
+      
 </resources>
