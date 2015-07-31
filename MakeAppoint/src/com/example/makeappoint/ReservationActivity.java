@@ -1,22 +1,31 @@
 package com.example.makeappoint;
 
+import com.example.calendar_02.ChooseAppointActivity;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 public class ReservationActivity extends SlidingFragmentActivity {
 
 	private RelativeLayout mRlLeft;
 	private Fragment mContent;
+	private Button mBtReser1;
+	private Button mBtReser3;
+	private Button mBtReser4;
+	private long exitTime = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +34,13 @@ public class ReservationActivity extends SlidingFragmentActivity {
 		setContentView(R.layout.reservation);
       		
 		initSlidingMenu(savedInstanceState);  
+		mBtReser1 =(Button)this.findViewById(R.id.mBtReser1);
+		mBtReser1.setOnClickListener(listener);
+		mBtReser3 =(Button)this.findViewById(R.id.mBtReser3);
+		mBtReser3.setOnClickListener(listener);
+		mBtReser4 =(Button)this.findViewById(R.id.mBtReser4);
+		mBtReser4.setOnClickListener(listener);
+		
 		initView();
 
 	}
@@ -69,11 +85,38 @@ public class ReservationActivity extends SlidingFragmentActivity {
 			case R.id.mRlre1:
 				toggle();
 				break;
+			case R.id.mBtReser1:
+				startActivity(new Intent(getApplicationContext(), ChoservaActivity.class));
+				
+				break;
+			case R.id.mBtReser3:
+				startActivity(new Intent(getApplicationContext(), ChooseAppointActivity.class));
+
+				break;
+			case R.id.mBtReser4:
+				startActivity(new Intent(getApplicationContext(), ChoservaActivity.class));
+
+				break;
 
 			default:
 				break;
 			}
 		}
 	};
+
+	@Override
+	public boolean dispatchKeyEvent(KeyEvent event) {
+		if(event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode() == KeyEvent.KEYCODE_BACK){
+			if((System.currentTimeMillis() - exitTime) > 2000){
+				Toast.makeText(getApplicationContext(), getResources().getString(R.string.t11), 1).show();
+				exitTime = System.currentTimeMillis();
+				}else{
+					finish();
+					android.os.Process.killProcess(android.os.Process.myPid());
+				}
+			return true;
+			}
+		return super.dispatchKeyEvent(event);
+	}
 
 }
